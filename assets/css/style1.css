@@ -1,0 +1,78 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('../img/bg.gif'); /* Ganti 'background.gif' dengan URL gambar GIF Anda */
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  width: 300px;
+  padding: 40px; /* Menambahkan ruang padding */
+  border-radius: 15px; /* Menambahkan sudut border yang lebih lembut */
+  background-color: #97b3eb;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-btn {
+  position: absolute;
+  color: rgb(0, 0, 0);
+  font-size: 35px;
+  margin: 25px;
+  cursor: pointer;
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-control {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  padding: 10px; /* Menambahkan padding ke input */
+  width: calc(100% - 20px); /* Mengatur lebar input dengan mempertimbangkan padding */
+  margin-top: 8px; /* Mengurangi margin atas input */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: red; /* Warna teks pesan kesalahan */
+  display: none;
+}
+
+.error {
+  border-color: red; /* Warna border input saat terjadi kesalahan */
+}
+
+.success {
+  border-color: green; /* Warna border input saat valid */
+}

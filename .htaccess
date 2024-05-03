@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /My-MovieList/
+RewriteRule ^index\\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /My-MovieList/index.php [L]

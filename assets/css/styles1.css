@@ -1,0 +1,85 @@
+/* Body styling */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-image: url('../img/bg.png');
+  background-size: cover;
+  background-position: center;
+  color: #271f1f;
+}
+
+/* Menu button styling */
+.menu-btn {
+  position: absolute; /* Tetapkan posisi absolut */
+  position: absolute;
+  color: rgb(0, 0, 0);
+  font-size: 35px;
+  margin-top: 5px;
+  cursor: pointer;
+  left: 25px; /* Menambahkan jarak dari sisi kanan sebesar 10px */
+}
+
+/* Dashboard container */
+.dashboard {
+  display: flex;
+  position: relative;
+}
+/* Styling for the table container */
+.table-container {
+  margin: auto; /* Center the table vertically and horizontally */
+  width: 100%; /* Set the width of the table container */
+  max-width: 1200px; /* Maximum width of the table container */
+}
+
+/* Styling for the table */
+.table {
+  width: 100%; /* Set the width of the table to fill its container */
+  border-collapse: collapse; /* Collapse the borders */
+}
+
+.th,
+td {
+  padding: 15px; /* Add padding to cells */
+  text-align: left; /* Align text to the left */
+  border-bottom: 2px solid #430e7e; /* Add bottom border to cells */
+  width: auto; /* Set width to auto to adjust to content */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .table-container {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+}
+
+/* Logout button styling */
+.logout {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.edit-btn {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  background-color: white;
+  border: 2px solid black; /* Tambahkan properti border */
+}
+
+.edit-btn:hover {
+  background-color: lightgray;
+}
+
+.logout button {
+  padding: 10px 20px;
+  background-color: #2d3699;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.logout button:hover {
+  background-color: #007bff;
+}

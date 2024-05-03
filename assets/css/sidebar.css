@@ -1,0 +1,76 @@
+
+/* Dashboard container */
+.dashboard {
+    display: flex;
+    position: relative;
+}
+
+.container {
+    display: flex;
+}
+
+/* Side bar styling */
+.side-bar {
+    background: #274496;
+    backdrop-filter: blur(15px);
+    width: 250px; /* Lebarkan side bar */
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Sembunyikan side bar di luar layar */
+    overflow-y: auto;
+    transition: left 0.6s ease; /* Mengubah properti transition */
+}
+
+.side-bar.active {
+    left: 0; /* Tampilkan side bar saat active */
+}
+
+.menu {
+    padding-top: 20px;
+}
+
+.item {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+}
+
+.item a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.item:hover {
+    background: #274496;
+}
+
+.sub-menu {
+    display: none;
+}
+
+.sub-btn {
+    display: flex;
+    align-items: center;
+}
+
+.sub-btn .dropdown {
+    margin-left: auto;
+}
+
+.sub-btn.active + .sub-menu {
+    display: block;
+}
+
+/* Media query untuk layar kecil */
+@media (max-width: 768px) {
+    .side-bar {
+        width: 50px;
+    }
+
+    .side-bar:hover {
+        width: 200px;
+    }
+}
