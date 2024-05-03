@@ -87,7 +87,7 @@ class dashboardController{
                 // Pindahkan file gambar yang diunggah ke folder uploads
                 if (move_uploaded_file($foto_temp, $foto_path)) {
                     // Panggil fungsi updateFilm untuk memperbarui data film dengan poster
-                    $success = dashboardModel::updateFilm($newid, $newjudul, $newrate, $newstatus,  $foto_path);
+                    $success = dashboardModel::updateFilm($newid, $newjudul, $newrate, $newstatus,  $foto_name);
         
                     // Jika pembaruan berhasil, arahkan ke halaman dashboard
                     if ($success) {
